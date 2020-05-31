@@ -40,8 +40,8 @@ public class Http1EventReceiverHandler extends SimpleChannelInboundHandler<FullH
     }
 
     /**
-	 * Reads the channel for incoming data from client(s).
-	 */
+     * Reads the channel for incoming data from client(s).
+     */
     @Override
     public void channelRead0(ChannelHandlerContext ctx, FullHttpRequest req) throws Exception 
     {
@@ -88,8 +88,8 @@ public class Http1EventReceiverHandler extends SimpleChannelInboundHandler<FullH
     }
 
     /**
-	 * Flushes the channel when it is fired for accepting new requests.
-	 */
+     * Flushes the channel when it is fired for accepting new requests.
+     */
     @Override
     public void channelReadComplete(ChannelHandlerContext ctx) throws Exception 
     {
@@ -97,8 +97,8 @@ public class Http1EventReceiverHandler extends SimpleChannelInboundHandler<FullH
     }
 
     /**
-	 * Handles exceptions caught while processing incoming data from client.
-	 */
+     * Handles exceptions caught while processing incoming data from client.
+     */
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause)
     {
