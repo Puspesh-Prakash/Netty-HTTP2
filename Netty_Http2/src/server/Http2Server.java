@@ -35,7 +35,7 @@ import io.netty.util.NettyRuntime;
 
 public final class Http2Server 
 {
-    static final boolean SSL = System.getProperty("ssl") != null;
+    static final boolean SSL = System.getProperty("ssl") != null; 
 
     static final int PORT = Integer.parseInt(System.getProperty("port", SSL? "8443" : "8089"));
 
