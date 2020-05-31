@@ -31,7 +31,9 @@ public class Http2OrHttpHandler extends ApplicationProtocolNegotiationHandler {
         if (ApplicationProtocolNames.HTTP_2.equals(protocol)) 
         {
             ctx.pipeline().addLast(Http2FrameCodecBuilder.forServer().build());
+            
             ctx.pipeline().addLast(new Http2MultiplexHandler(new Http2EventReceiverHandler()));
+            
             return;
         }
 
