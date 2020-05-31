@@ -35,9 +35,9 @@ public final class Http2ClientFrameInitializer extends ChannelInitializer<Channe
 		}
 
 		final Http2FrameCodec http2FrameCodec = Http2FrameCodecBuilder.forClient()
-													.initialSettings(Http2Settings.defaultSettings()
-													.maxFrameSize(5242880).initialWindowSize(5242880)) 
-													.build();
+									      .initialSettings(Http2Settings.defaultSettings()
+									      .maxFrameSize(5242880).initialWindowSize(5242880)) 
+									      .build();
 		
 		ch.pipeline().addLast(http2FrameCodec);
 		
