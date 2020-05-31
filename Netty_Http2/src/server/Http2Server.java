@@ -28,7 +28,7 @@ import io.netty.util.NettyRuntime;
 /**
  * @author Puspesh.Prakash
  * 
- * A HTTP/2 Server that responds to requests with a event. 
+ * A HTTP/2 Server that responds to requests with an event. 
  *
  * <p> This class is making use of the "multiplexing" http2 API, where streams are mapped to child Channels. 
  */
