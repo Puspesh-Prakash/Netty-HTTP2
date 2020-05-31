@@ -82,9 +82,9 @@ public final class Http2FrameClient
 			b.group(clientWorkerGroup)
 			 .channel(NioSocketChannel.class)
 			 .option(ChannelOption.SO_KEEPALIVE, true)
-                   	 .option(ChannelOption.SO_SNDBUF, 5242880) //5 MB
-             		 .option(ChannelOption.SO_RCVBUF, 5242880) //5 MB
-             		 .option(ChannelOption.WRITE_BUFFER_WATER_MARK, new WriteBufferWaterMark(3145728, 5242880)) //(low: 3 MB, high: 5 MB)
+             .option(ChannelOption.SO_SNDBUF, 5242880) //5 MB
+             .option(ChannelOption.SO_RCVBUF, 5242880) //5 MB
+             .option(ChannelOption.WRITE_BUFFER_WATER_MARK, new WriteBufferWaterMark(3145728, 5242880)) //(low: 3 MB, high: 5 MB)
 			 .remoteAddress(HOST, PORT)
 			 .handler(new Http2ClientFrameInitializer(sslCtx));
 
