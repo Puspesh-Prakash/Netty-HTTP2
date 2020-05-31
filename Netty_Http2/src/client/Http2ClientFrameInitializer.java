@@ -46,7 +46,7 @@ public final class Http2ClientFrameInitializer extends ChannelInitializer<Channe
 			@Override
 			protected void channelRead0(ChannelHandlerContext arg0, Object arg1) throws Exception
 			{
-				//NOOP 
+			     //NOOP 
 			}
 		}));
 	}
