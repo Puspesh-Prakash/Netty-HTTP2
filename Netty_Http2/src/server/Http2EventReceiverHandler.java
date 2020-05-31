@@ -150,6 +150,12 @@ public class Http2EventReceiverHandler extends ChannelDuplexHandler
 		}
 	}
 	
+	/**
+	 * Sends HTTP/2 header frames to the dedicated channel.
+	 * @param ctx
+	 * @param headers
+	 * @param payload
+	 */
 	void sendHttpAckResponse(ChannelHandlerContext ctx, HttpResponseStatus status) 
 	{
 		try 
