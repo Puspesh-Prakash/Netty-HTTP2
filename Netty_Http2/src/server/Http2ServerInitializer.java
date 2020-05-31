@@ -76,7 +76,7 @@ public class Http2ServerInitializer extends ChannelInitializer<SocketChannel>
 	}
 
     /**
-     * Configure the pipeline for TLS NPN negotiation to HTTP/2.
+     * Configures the pipeline for TLS NPN negotiation to HTTP/2.
      */
     private void configureSsl(SocketChannel ch) 
     {
@@ -102,7 +102,7 @@ public class Http2ServerInitializer extends ChannelInitializer<SocketChannel>
     };
     
     /**
-     * Configure the pipeline for a clear-text upgrade from HTTP to HTTP/2.0
+     * Configures the pipeline for a clear-text upgrade from HTTP to HTTP/2.0
      */
     @SuppressWarnings("unused")
 	private void configureClearTextHttp1(SocketChannel ch) 
