@@ -31,8 +31,7 @@ import io.netty.handler.ssl.util.InsecureTrustManagerFactory;
 /**
  * An HTTP2 client that allows to send HTTP2 frames to a server using the
  * newer HTTP2 approach (via {@link io.netty.handler.codec.http2.Http2FrameCodec}). When run from the
- * command-line, sends a single headers frame (with prior knowledge) to the
- * server configured at host:port/path.
+ * command-line, sends a single headers frame (with prior knowledge) to the server configured at host:port/path.
  * 
  * @author Puspesh.Prakash
  */
