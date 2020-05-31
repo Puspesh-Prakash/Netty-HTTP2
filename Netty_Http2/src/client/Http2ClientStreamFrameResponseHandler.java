@@ -11,7 +11,7 @@ import io.netty.handler.codec.http2.Http2StreamFrame;
 import io.netty.util.CharsetUtil;
 
 /**
- * Handles HTTP/2 stream frame responses.
+ * Handles all the streaming HTTP/2 frame responses.
  * 
  * @author Puspesh.Prakash
  */
