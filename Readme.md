@@ -14,7 +14,7 @@ Follow Contributor Covenant Code of Conduct for contribution guidelines at https
 
 ## Issues and Feature Requests: 
 
-Follow the link https://github.com/Puspesh-Prakash/Netty-HTTP2/blob/master/.github/ISSUE_TEMPLATE/feature_request.md for issues and feature request guidelines.
+Follow this link https://github.com/Puspesh-Prakash/Netty-HTTP2/blob/master/.github/ISSUE_TEMPLATE/feature_request.md for issues and feature request guidelines.
 
 ## License
 
